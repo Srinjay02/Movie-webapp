@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metflix India</title>
+  <link href="/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-black text-white">
+  <header class="text-red-500 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-red-700 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Metflix</span>
+      </a>
+      <nav
+        class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-red-900" href="/">Sign-Out</a>
+      </nav>
+      <input type="text" name="movieName" class="mr-1 p-1 bg-gray-800 rounded" id="movieName"
+        placeholder="Enter movie name">
+      <button
+        class="inline-flex items-center bg-red-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-base mt-4 md:mt-0"
+        onclick="getMovie()">Search
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <h1 class="text-red-700 text-center w-full h-auto text-5xl m-3">Welcome <%= username %></h1>
+
+  <div class="moviesContainer w-full h-full flex justify-around flex-col md:flex-row">
+    <div class="movieLogo w-1/2 flex justify-center items-center m-auto md:m-0">
+      <div id="moviePoster" class="h-5/6"></div>
+    </div>
+    <div class="movieDetails w-9/12 flex flex-col justify-evenly text-sm m-auto md:mt-20 md:pl-8 md:pr-20 md:w-2/5">
+      <div id="movieType"></div>
+      <div id="movieCountry"></div>
+      <div id="movieBox"></div>
+      <div id="movieGenre"></div>
+      <div id="movieRuntime"></div>
+      <div id="moviePlot"></div>
+      <div id="movieAwards"></div>
+      <div id="movieRelease"></div>
+      <div id="movieRating"></div>
+      <div id="movieActors"></div>
+      <div id="movieWriters"></div>
+      <div id="movieDirectors"></div>
+    </div>
+  </div>
+
+  <div class="searchRequest text-center text-xl text-gray-600" id="searchReq">
+    Enter the movie or series name which you want to extract details
+  </div>
+
+  <script src="/movies.js"></script>
+</body>
+
+</html>
