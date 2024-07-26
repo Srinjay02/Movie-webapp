@@ -1,0 +1,84 @@
+.row1{
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.row2{
+    width: 100%;
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.secondaryheading{
+    text-align: center;
+    font-size: 30px;
+}
+.bodyparagraph{
+    text-align: center;
+    font-size: 20px;
+}
+.imgcol img{
+    width: 150px;
+    height: auto;
+}
+.homebg{
+    height: auto;
+    width: 100%;
+}
+.homebg .homehighlight{
+    margin-top: 100px;
+}
+.homebtn{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mailid{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.primaryheading{
+    font-size: 40px;
+}
+.homeheadingcaption1{
+    font-size: 20px;
+    padding: 5px 0px;
+}
+.homeheadingcaption2{
+    font-size: 15px;
+}
+.logo img{
+    /* width: 100px; */
+    height: auto;
+    margin-left: 0px;
+}
+.navbar{
+    flex-direction: column;
+}
+.logo{
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.navc{
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.navc a{
+    margin-right: 20px;
+    padding: 3px 20px;
+}
+.contact{
+    margin: 30px 37px;
+}
+.enddetalis{
+    flex-direction: column;
+}
