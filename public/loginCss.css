@@ -76,6 +76,7 @@ form h1{
 #loginBtn{
     background-color: red;
     color: white;
+    cursor: pointer;
 }
 
 #signinBtn{
