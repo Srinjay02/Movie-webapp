@@ -27,7 +27,7 @@
         placeholder="Enter movie name">
       <button
         class="inline-flex items-center bg-red-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-base mt-4 md:mt-0"
-        onclick="getMovie()">Search
+        onclick="getMovie(); getMovieTrailer()">Search
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -35,7 +35,7 @@
       </button>
     </div>
   </header>
-  <h1 class="text-red-700 text-center w-full h-auto text-5xl m-3">Welcome <%= username %></h1>
+  <h1 class="text-red-700 text-center w-full h-auto text-5xl m-3" id="movieHeader">Welcome <%= username %></h1>
 
   <div class="moviesContainer w-full h-full flex justify-around flex-col md:flex-row">
     <div class="movieLogo w-1/2 flex justify-center items-center m-auto md:m-0">
@@ -54,6 +54,7 @@
       <div id="movieActors"></div>
       <div id="movieWriters"></div>
       <div id="movieDirectors"></div>
+      <div id="movieTrailer"></div>
     </div>
   </div>
 
