@@ -63,6 +63,7 @@ form h1{
 #signinBtn{
     background-color: red;
     color: white;
+    cursor: pointer;
 }
 
 #loginBtn{
